@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dekay WL — Connexion</title>
+<meta name="description" content="Rejoindre le serveur FiveM Dekay WL">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--rouge:#c8102e;--rouge-clair:#ff4d5e;--fond:#07070a;--panneau:#111116;--texte:#f2f2f5;--doux:#9a9aa6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at 50% 0%,#2a0710 0%,var(--fond) 60%);color:var(--texte);font-family:Poppins,system-ui,sans-serif;padding:16px}
+.carte{width:100%;max-width:440px;background:var(--panneau);border:1px solid #ffffff12;border-top:3px solid var(--rouge);border-radius:14px;padding:36px 28px;text-align:center;box-shadow:0 20px 60px #000a}
+h1{font-size:2rem;font-weight:800;letter-spacing:2px}
+h1 span{color:var(--rouge)}
+p{color:var(--doux);margin:12px 0 26px;line-height:1.5}
+.etat{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:24px;color:var(--texte)}
+.rond{width:18px;height:18px;border:3px solid #ffffff22;border-top-color:var(--rouge);border-radius:50%;animation:t 1s linear infinite}
+@keyframes t{to{transform:rotate(360deg)}}
+.btn{display:block;width:100%;padding:14px;border-radius:10px;background:linear-gradient(135deg,var(--rouge-clair),var(--rouge));color:#fff;font-weight:600;text-decoration:none;font-size:1.05rem;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.lien{display:inline-block;margin-top:18px;color:var(--doux);font-size:.9rem}
+.lien:hover{color:var(--rouge-clair)}
+</style>
+</head>
+<body>
+<main class="carte">
+  <h1>DEKAY <span>WL</span></h1>
+  <p>Ouverture de FiveM pour rejoindre le serveur…</p>
+  <div class="etat"><div class="rond"></div><span>Lancement de la connexion</span></div>
+  <a class="btn" id="connexion" href="fivem://connect/cfx.re/join/oaa8ez7">Se connecter au serveur</a>
+  <a class="lien" href="https://fivem.net/" target="_blank" rel="noopener">Pas encore FiveM ? Télécharger FiveM</a>
+</main>
+<script>setTimeout(function(){location.href='fivem://connect/cfx.re/join/oaa8ez7'},400)</script>
+</body>
+</html>
